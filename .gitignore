@@ -1,6 +1,7 @@
 .env
 counter.js
 package.json
+server.js
 
 # Logs
 logs
