@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text To Image</title>
+</head>
+
+<body>
+  <main>
+    <h1>Text To Image</h1>
+
+    <form id="form">
+      <label for="prompt"></label>
+      <textarea name="prompt" maxlength="500" placeholder="Enter your text"></textarea>
+      <div id="options">
+        Color: <input type="color" name="clr" id="clr">
+        Font size: <input type="number" name="size" min="6" max="40" id="size">
+      </div>
+      <button type="submit">Generate</button>
+    </form>
+    <div id="result">
+      Image will appear here
+    </div>
+
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

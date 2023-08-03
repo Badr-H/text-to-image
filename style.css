@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Glitch&family=Rubik+Microbe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background-color: #0b0b0e;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 50px;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-family: 'press start 2P', cursive;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+#result {
+  aspect-ratio: 2/1;
+  max-width: 100%;
+  width: 90%;
+  background: #3a3a43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 30px 0;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 512px;
+  margin-top: 2rem;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0 0 0;
+  font-size: 1.5rem;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b1e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 30px 0 30px 0;
+}
+
+#options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 512px;
+  margin-top: 2rem;
+}
+
+
+
+button:hover {
+  background-color: #2b2b2e;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.spinner {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
